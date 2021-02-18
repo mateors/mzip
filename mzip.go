@@ -17,7 +17,8 @@ func ensureDir(dirName string) error {
 	return err
 }
 
-func makeZip(inputPath, outputFile string) (bool, error) {
+//MakeZip ...
+func MakeZip(inputPath, outputFile string) (bool, error) {
 
 	if _, err := os.Stat(inputPath); os.IsNotExist(err) {
 		return false, err
